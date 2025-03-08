@@ -1,22 +1,19 @@
-AcunMedya.Restaruantly
+# **AcunMedya.Restaruantly**  
 
-Bu proje, ASP.NET MVC kullanılarak geliştirilmiş bir web uygulamasıdır. Veritabanı yönetimi için MS SQL Server kullanılmış ve Code-First yaklaşımı benimsenmiştir.
+Bu proje, **ASP.NET MVC** kullanılarak geliştirilmiş bir web uygulamasıdır. Veritabanı yönetimi için **MS SQL Server** kullanılmış ve **Code-First** yaklaşımı benimsenmiştir.  
 
+## 📌 **Kullanılan Teknolojiler**  
 
-📌 Kullanılan Teknolojiler
+- **ASP.NET MVC 5**  
+- **Entity Framework (Code-First)**  
+- **Bootstrap / CSS / JavaScript**  
 
-ASP.NET MVC 5
+## 🖼️ **Ekran Görüntüleri**  
 
-Entity Framework (Code-First)
+![tam_ekran](images/tam-ekran.jpeg)  
 
-Bootstrap / CSS / JavaScript
+![Dashboard](images/dashboard.jpeg)  
 
-🖼️ Ekran Görüntüsü
+![mesajlar](images/mails.jpeg)  
 
-![tam_ekran](images/tam-ekran.jpeg)
-
-![Dashboard](images/dashboard.jpeg)
-
-![mesajlar](images/mails.jpeg)
-
-![gusfring](images/gusfring.jpeg)
+![gusfring](images/gusfring.jpeg)  
