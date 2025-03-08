@@ -1,0 +1,60 @@
+﻿@model AcunMedya.Restaruantly.Entities.Testimonial
+@{
+    ViewBag.Title = "AddTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Testimoniyal Ekle</a></li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Testimonial ekle</h4>
+                <div class="basic-form">
+                    @using (Html.BeginForm("AddTestimonial", "Testimonial", FormMethod.Post))
+                    {
+                        <div class="form-group">
+                            <label>İsim</label>
+                            @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "İsim giriniz" })
+                            <br />
+
+                            <label>Ünvan</label>
+                            @Html.TextBox("Title", " ", new { @class = "form-control", placeholder = "Ünvan giriniz" })
+                            <br />
+
+                            <label>Açıklama</label>
+                            @Html.TextBox("Description", null, new { @class = "form-control", placeholder = "Açıklama giriniz" })
+                            <br />
+
+                            <label>Image Url</label>
+                            @Html.TextBox("ImageUrl", null, new { @class = "form-control", placeholder = "Resim URL giriniz" })
+                            <br />
+
+                            <button type="submit" class="btn btn-success">Kaydet</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

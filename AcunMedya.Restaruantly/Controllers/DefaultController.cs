@@ -118,5 +118,21 @@ namespace AcunMedya.Restaruantly.Controllers
  
             return PartialView();
         }
+
+        public PartialViewResult PartialEvent()
+        {
+            var values  = Db.Events.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult PartialGallery()
+        {
+            var values = Db.Galleries.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialFooter()
+        {
+            return PartialView();
+        }
     }
 }

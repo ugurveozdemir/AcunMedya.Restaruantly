@@ -8,7 +8,7 @@ using AcunMedya.Restaruantly.Entities;
 
 namespace AcunMedya.Restaruantly.Controllers
 {
-    [Authorize]
+   // [Authorize]
     public class CategoryController : Controller
     {
         RestaurantlyContext db = new RestaurantlyContext();

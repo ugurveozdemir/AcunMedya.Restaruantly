@@ -1,0 +1,37 @@
+﻿@model List<AcunMedya.Restaruantly.Entities.Contact>
+<ul class="clearfix">
+    <li class="icons dropdown">
+        <a href="javascript:void(0)" data-toggle="dropdown">
+            <i class="mdi mdi-email-outline"></i>
+            <span class="badge gradient-1 badge-pill badge-primary">@Model.Count()</span>
+        </a>
+        <div class="drop-down animated fadeIn dropdown-menu">
+            <div class="dropdown-content-heading d-flex justify-content-between">
+                <span class="">@Model.Count() Unread Messages</span>
+
+            </div>
+            <div class="dropdown-content-body">
+                <ul>
+                    @foreach (var item in Model)
+                    {
+                        <li class="notification-unread">
+                            <a href="/Contact/Message/@item.ContactId">
+
+                                <div class="notification-content">
+                                    <div class="notification-heading">@item.Name</div>
+                                    <div class="notification-timestamp">
+                                        @item.SendDate.ToString("dd,MM,yyyy")
+                                    </div>
+                                    <div class="notification-text">@item.Subject</div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+
+
+                </ul>
+
+            </div>
+        </div>
+
+    </li>

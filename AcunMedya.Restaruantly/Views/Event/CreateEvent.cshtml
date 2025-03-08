@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "CreateEvent";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+
+
+
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Etkinlik Ekle</a></li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Etkinlik ekle</h4>
+                <div class="basic-form">
+                    <form method="post">
+
+                        <div class="form-group">
+
+                           
+                            <br />
+                            <label>Etkinlik</label>
+
+                            <input type="text" class="form-control" name="Title"  placeholder="Type a Event name">
+                            <br />
+                            <label>Açıklama</label>
+                            <input type="text" class="form-control" name="Description"  placeholder="Type a Event title">
+                            <br />
+                            <label>Açıklama 2</label>
+                            <input type="text" class="form-control" name="Description2"  placeholder="Type a Event Image">
+                            <br />
+                            <label>Fiyat</label>
+                            <input type="text" class="form-control" name="Price"  placeholder="Type a Event Image">
+                            <br />
+                            <label>Resim Url</label>
+                            <input type="text" class="form-control" name="ImageUrl"  placeholder="Type a Event Image">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+﻿@model AcunMedya.Restaruantly.Entities.Testimonial
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Testimonial Düzenle</a></li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> Testimonial Düzenle</h4>
+                <div class="basic-form">
+                    <form method="post">
+
+                        <div class="form-group">
+                            @Html.HiddenFor(m => m.TestimonialId)
+                            <label>İsim</label>
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control", value = Model.Name })
+                            <br />
+                            <label>Ünvan</label>
+                            @Html.TextBoxFor(x => x.Title, new { @class = "form-control", value = Model.Title })
+                            <br />
+                            <label>Açıklama</label>
+                            @Html.TextBoxFor(x => x.Description, new { @class = "form-control",value = Model.Description })
+                            <br />
+                            <label>Image Url</label>
+                            @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control",value = Model.ImageUrl })
+                            <br />
+                            
+
+                        </div>
+
+                        <button type="submit" class="btn btn-dark">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

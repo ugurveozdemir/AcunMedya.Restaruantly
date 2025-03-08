@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace AcunMedya.Restaruantly.Controllers
 {
-    [Authorize]
+   // [Authorize]
     public class ProductController : Controller
     {
         // GET: Product

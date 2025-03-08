@@ -11,7 +11,7 @@
     <div class="col p-md-0">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">Menu</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Ürünler</a></li>
         </ol>
     </div>
 </div>
@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-title">
-                        <h4>Menu List</h4>
+                        <h4>Ürün Listesi</h4>
                     </div>
                     <div class="table-responsive">
                         <div class="mb-2">
@@ -33,13 +33,13 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Price</th>
-                                    <th>ImageUrl</th>
-                                    <th>Category</th>
-                                    <th>Update</th>
-                                    <th>Delete</th>
+                                    <th>İsim</th>
+                                    <th>Açıklama</th>
+                                    <th>Fiyat</th>
+                                    <th>Image Url</th>
+                                    <th>Kategori</th>
+                                    <th>Güncelle</th>
+                                    <th>Sil</th>
 
                                 </tr>
                             </thead>
@@ -53,7 +53,7 @@
                                         <td>@item.Name</td>
                                         <td>@item.Description</td>
                                         <td>@item.Price</td>
-                                        <td><img src="@item.ImageUrl"/ style="width:100px;height:100px;"></td>
+                                        <td><img src="@item.ImageUrl" style="width:100px;height:100px;"></td>
                                         <td>@item.Category.CategoryName</td>
                                         <td><a href="/Product/ProductUpdate/@item.ProductId" class="btn btn-primary"><i class="fa fa-edit color-muted m-r-5"></i> Update</a> </td>
                                         <td><a href="/Product/ProductDelete/@item.ProductId" class="btn btn-danger">

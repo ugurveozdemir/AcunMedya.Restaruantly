@@ -36,5 +36,18 @@ namespace AcunMedya.Restaruantly.Controllers
             }
             return View();
         }
+        
+        public ActionResult LogOut()
+        {
+            // Kullanıcıyı çıkış yaptır
+            FormsAuthentication.SignOut();
+
+            // Session verilerini temizle
+            Session.Clear();
+            Session.Abandon();
+
+            // Kullanıcıyı giriş sayfasına yönlendir
+            return RedirectToAction("Index", "Default"); // Giriş sayfasına yönlendir
+        }
     }
 }

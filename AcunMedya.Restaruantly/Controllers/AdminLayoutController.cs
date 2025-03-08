@@ -47,5 +47,10 @@ namespace AcunMedya.Restaruantly.Controllers
             db.SaveChanges();
             return RedirectToAction("Index", "Dashboard");
         }
+        public PartialViewResult PartialMessages()
+        {
+            var values = db.Contacts.Where(x => x.IsRead == false).ToList();
+            return PartialView(values);
+        }
 }
     }
