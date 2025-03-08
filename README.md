@@ -10,7 +10,7 @@ Bu proje, **ASP.NET MVC** kullanılarak geliştirilmiş bir web uygulamasıdır.
 
 ## 🖼️ **Ekran Görüntüleri**  
 
-![tam_ekran](images/tam-ekran.jpeg)  
+![tam_ekran](images/tam-ekranzi.jpeg)  
 
 ![Dashboard](images/dashboard.jpeg)  
 
