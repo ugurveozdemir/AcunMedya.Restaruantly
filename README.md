@@ -17,3 +17,8 @@ Bu proje, **ASP.NET MVC** kullanılarak geliştirilmiş bir web uygulamasıdır.
 ![mesajlar](images/mails.jpeg)  
 
 ![gusfring](images/gusfring.jpeg)  
+
+![urun](images/urun.jpeg)  
+
+![rezervasyon](images/rez.jpeg)  
+
